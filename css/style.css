@@ -130,10 +130,20 @@ h1 {
     color: var(--white);
 }
 
-.category-title {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
+.category-link {
+    display: inline-block;
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border: 1px solid var(--white);
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.category-link:hover {
+    background: var(--white);
+    color: var(--text-dark);
 }
 
 /* Features Section */
