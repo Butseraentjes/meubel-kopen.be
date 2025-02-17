@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meubel-kopen.be | Duurzame Houten Meubels</title>
+    <meta name="description" content="Ontdek onze collectie duurzame houten meubels. Ambachtelijk vervaardigd met oog voor detail en kwaliteit. Perfect voor elk interieur.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://cdn.shopify.com/s/files/1/0770/4697/2750/files/ewood-logo-500_23480c7e-12ba-4e10-ab6e-9c274df584c7.png?v=1739457341" alt="E-wood Products Logo">
+        </div>
+        <h1>Duurzame Houten Meubels</h1>
+        <p class="header-subtitle">Ambachtelijk vakmanschap en moderne design komen samen in onze collectie handgemaakte houten meubels</p>
+        <a href="https://www.e-woodproducts.be/" class="hero-cta">Ontdek onze collectie</a>
+    </header>
+
+    <section class="category-grid">
+        <div class="category-card fade-in">
+            <img src="https://www.e-woodproducts.be/cdn/shop/files/tuinbank-flow-200-1_1200x1200.jpg?v=1706789167" alt="Tuinmeubelen">
+            <div class="category-content">
+                <h2 class="category-title">Tuinmeubelen</h2>
+                <p>Duurzame houten tuinmeubels voor jarenlang buitenplezier</p>
+            </div>
+        </div>
+
+        <div class="category-card fade-in">
+            <img src="https://www.e-woodproducts.be/cdn/shop/files/kast-op-maat-1_667x1000.jpg?v=1706789157" alt="Kasten">
+            <div class="category-content">
+                <h2 class="category-title">Kasten</h2>
+                <p>Stijlvolle opbergoplossingen voor elk interieur</p>
+            </div>
+        </div>
+
+        <div class="category-card fade-in">
+            <img src="https://www.e-woodproducts.be/cdn/shop/files/tv-meubel-flow-200-1_1200x1200.jpg?v=1706789157" alt="TV Meubels">
+            <div class="category-content">
+                <h2 class="category-title">TV Meubels</h2>
+                <p>Modern design met praktische functionaliteit</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="features-grid">
+            <div class="feature-item fade-in">
+                <div class="feature-icon">♦</div>
+                <h3 class="feature-title">Duurzaam Hout</h3>
+                <p>Zorgvuldig geselecteerd hout van hoge kwaliteit</p>
+            </div>
+
+            <div class="feature-item fade-in">
+                <div class="feature-icon">♦</div>
+                <h3 class="feature-title">Vakmanschap</h3>
+                <p>Handgemaakt door ervaren meubelmakers</p>
+            </div>
+
+            <div class="feature-item fade-in">
+                <div class="feature-icon">♦</div>
+                <h3 class="feature-title">Maatwerk</h3>
+                <p>Aangepast aan uw specifieke wensen</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>BV E-Products Europe</h3>
+                <p>Patijntjestraat 107<br>9000 Gent</p>
+                <p>BTW: BE 0500.621.156</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>E-mail: support@e-woodproducts.com</p>
+                <p>BIC: GEBA BE BB<br>
+                IBAN: BE 61 0016 8384 4117</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Over Ons</h3>
+                <p>E-wood Products staat voor kwaliteit, duurzaamheid en vakmanschap in houten meubels.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Fade in animation voor elementen
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+</body>
+</html>
